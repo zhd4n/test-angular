@@ -1,0 +1,12 @@
+<h2 class="ui header">{{ 'form.header' | translate }}</h2>
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit()" class="ui form">
+  <div class="field">
+    <label>{{ 'form.name' | translate }}</label>
+    <input formControlName="name" type="text" name="name" placeholder="{{ 'form.name' | translate }}" required>
+  </div>
+  <div class="field">
+    <label>{{ 'form.phone' | translate }}</label>
+    <input formControlName="phone" type="text" name="phone" placeholder="{{ 'form.phone' | translate }}" required>
+  </div>
+  <button [disabled]="contactForm.pristine || !contactForm.valid" class="ui button" type="submit">{{ 'form.save' | translate }}</button>
+</form>

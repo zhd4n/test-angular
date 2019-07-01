@@ -1,0 +1,14 @@
+{
+  "menu.about": "About",
+  "menu.contact_list": "Contact List",
+  "menu.language": "Language",
+  "form.header": "Add contact",
+  "form.name": "Name",
+  "form.phone": "Phone",
+  "form.save": "Save",
+  "list.header": "Contact List",
+  "list.name": "Name",
+  "list.phone": "Phone",
+  "list.delete": "Delete",
+  "list.empty": "There are no contacts in your list. You may add some using the form."
+}

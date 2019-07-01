@@ -1,0 +1,14 @@
+{
+  "menu.about": "О нас",
+  "menu.contact_list": "Контакты",
+  "menu.language": "Выберите язык",
+  "form.header": "Новый контакт",
+  "form.name": "Имя",
+  "form.phone": "Телефон",
+  "form.save": "Сохранить",
+  "list.header": "Список контактов",
+  "list.name": "Имя",
+  "list.phone": "Телефон",
+  "list.delete": "Удалить",
+  "list.empty": "Список пуст"
+}

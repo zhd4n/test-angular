@@ -1,0 +1,33 @@
+<div class="ui grid">
+  <div class="eight wide column">
+    <app-contact-add></app-contact-add>
+  </div>
+
+  <div class="eight wide column">
+    <h2 class="ui header">{{ 'list.header' | translate }}</h2>
+
+    <div *ngIf="(contacts | async)?.length > 0; else empty" class="ui divided relaxed items">
+      <div *ngFor="let contact of contacts| async; let i = index" class="item">
+        <div class="content">
+          <div class="description">
+            <p>{{ 'list.name' | translate }}: {{contact.name}}</p>
+            <p>{{ 'list.phone' | translate }}: {{contact.phone}}</p>
+          </div>
+          <div class="extra">
+            <div (click)="onDelete(i)" class="ui mini red button">
+              {{ 'list.delete' | translate }}
+              <i class="right trash alternate outline icon"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <ng-template #empty>
+      <div class="ui message">
+        <p>{{ 'list.empty' | translate }}</p>
+      </div>
+    </ng-template>
+  </div>
+</div>
+
